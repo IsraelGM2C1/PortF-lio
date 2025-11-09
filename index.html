@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Israel Gomes Moreira — Portfólio</title>
+    <link rel="icon" href="images.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+        content="Portfólio de Israel Gomes Moreira — Desenvolvedor em formação (C#, HTML, Linux)." />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" class="navbar__brand">
+                <div class="brand__icon"></div>
+                <span class="brand__text">Israel GM</span>
+            </a>
+            
+            <div class="navbar__menu" id="navbarMenu">
+                <a href="#home" class="navbar__link">Home</a>
+                <a href="#sobre" class="navbar__link">Skills</a>
+                <a href="#sobre-mim" class="navbar__link">Sobre</a>
+                <a href="#projetos" class="navbar__link">Projetos</a>
+                <a href="#terminal-interativo" class="navbar__link">Terminal</a>
+                <a href="#contato" class="navbar__link">Contato</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">🌙</button>
+                <button class="mobile-theme-toggle" id="mobileThemeToggle">🌙</button>
+            </div>
+            
+            <div class="navbar__actions">
+                <button class="navbar__toggle" id="navbarToggle">
+                    <span class="toggle__line"></span>
+                    <span class="toggle__line"></span>
+                    <span class="toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Apresentação">
+        <!-- feixes de luz (sem as bolas) -->
+        <div class="spot-wrap" aria-hidden="true">
+            <div class="spot spot--left"></div>
+            <div class="spot spot--right"></div>
+        </div>
+
+        <div class="hero__inner">
+            <div>
+                <div class="kicker">Desenvolvedor em Formação · C# · HTML · Linux</div>
+                <h1 class="display">Israel Gomes Moreira</h1>
+                <p class="sub">Construindo a base para me tornar um desenvolvedor completo. Em formação, mas já com os
+                    olhos no futuro da tecnologia.</p>
+                <div class="cta">
+                    <a class="btn btn--light" href="#contato">Entre em contato</a>
+                    <a class="btn" href="#sobre">Saiba mais</a>
+                </div>
+            </div>
+
+            <!-- Terminal animado -->
+            <aside class="terminal" aria-label="Terminal">
+                <div class="terminal__header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="title">bash — israelgm@dev</span>
+                </div>
+                <pre class="terminal__body" id="terminalBody" aria-live="polite"></pre>
+            </aside>
+        </div>
+        
+        <div class="scroll-indicator" id="scrollIndicator" style="display: none;">
+            <a href="#sobre" class="scroll-btn" aria-label="Rolar para baixo">↓</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="skills section reveal">
+        <div class="skills__inner">
+            <header class="skills__head reveal">
+                <h2 class="skills__title">Minhas Skills</h2>
+                <p class="skills__tag">Clique em uma skill para explorar mais detalhes</p>
+            </header>
+
+            <div class="skills__grid">
+                <div class="skill-card" data-skill="csharp">
+                    <div class="skill-icon">🔷</div>
+                    <h3>C#</h3>
+                    <p>Linguagem principal</p>
+                </div>
+                <div class="skill-card" data-skill="web">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Dev</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card" data-skill="linux">
+                    <div class="skill-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Administração e automação</p>
+                </div>
+            </div>
+
+            <div class="skill-detail" id="skillDetail">
+                <button class="skill-close" id="skillClose">✕</button>
+                <div class="skill-content" id="skillContent"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre-mim" class="about section reveal">
+        <div class="about__inner">
+            <header class="about__head reveal">
+                <h2 class="about__title">Sobre Mim</h2>
+                <p class="about__tag">COTEMIG • Dev em formação • C# · HTML/CSS/JS · Linux</p>
+            </header>
+
+            <div class="about__grid">
+                <div class="about__content reveal">
+                    <p>Sou estudante do COTEMIG e aspirante a desenvolvedor, apaixonado por tecnologia e aprendizado contínuo.</p>
+                    <p>Busco me tornar um profissional completo, unindo curiosidade, disciplina e criatividade.</p>
+                    <p>Estou em formação, mas já com a mentalidade de um desenvolvedor voltado para soluções reais.</p>
+
+                    <ul class="about__facts">
+                        <li><span>Foco atual</span><strong>C#, HTML/CSS/JS, Linux</strong></li>
+                        <li><span>Interesses</span><strong>Web, Manutenção em codigos e aberto para outros</strong></li>
+                        <li><span>Soft skills</span><strong>Comunicação, organização, aprendizado rápido</strong></li>
+                    </ul>
+
+                    <div class="about__skills">
+                        <span class="chip">C#</span>
+                        <span class="chip">.NET</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Linux</span>
+                    </div>
+
+                    <div class="about__cta">
+                        <a class="btn btn--light" href="#projetos">Ver Projetos</a>
+                        <a class="btn" href="ISRAEL MOREIRA-CURRICULO.pdf" download>Baixar Currículo</a>
+                    </div>
+                </div>
+
+                <aside class="about__photo reveal">
+                    <figure class="polaroid">
+                        <img src="1000012508.jpg" alt="Israel Gomes Moreira" />
+                    </figure>
+                </aside>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projetos" class="projects section reveal">
+        <div class="projects__inner">
+            <header class="projects__head reveal">
+                <h2 class="projects__title">Projetos</h2>
+                <p class="projects__tag">Alguns trabalhos que desenvolvi durante minha jornada</p>
+            </header>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+            </div>
+            
+            <div class="projects__grid">
+                <div class="project-card reveal" data-category="desktop">
+                    <div class="project-header">
+                        <h3>Site_Tulen</h3>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                    <p>Trabalho feito em aula de desenvolvimento de sites.</p>
+                    <div class="tech-stack">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://israelgm2c1.github.io/site-tulen/  " class="btn btn--light" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-header">
+                        <h3>Site-Ecommerce</h3>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                    <p>Projete de site de E-commerce.</p>
+                    <div class="tech-stack" style="padding-top: 30px;">
+                        <span class="tech">HTML</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://israelgm2c1.github.io/Site_E-commerce/" class="btn btn--light" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="terminal-interativo" class="interactive-terminal section reveal">
+        <div class="interactive-terminal__inner">
+            <header class="interactive-terminal__head reveal">
+                <h2 class="interactive-terminal__title">Terminal Interativo</h2>
+                <p class="interactive-terminal__tag">Digite 'help' para ver os comandos disponíveis</p>
+            </header>
+            
+            <div class="terminal-container reveal">
+                <div class="terminal-interactive">
+                    <div class="terminal-interactive__header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="title">bash — israelgm@portfolio</span>
+                    </div>
+                    <div class="terminal-interactive__body" id="terminalInteractive">
+                        <div class="terminal-line">
+                            <span class="prompt">israel@portfolio:~$</span> <span class="welcome">Bem-vindo ao meu terminal! Digite 'help' para começar.</span>
+                        </div>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">israel@portfolio:~$</span>
+                        <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact section reveal">
+        <div class="contact__inner">
+            <header class="contact__head reveal">
+                <h2 class="contact__title">Contato</h2>
+                <p class="contact__tag">Vamos conversar sobre tecnologia e oportunidades</p>
+            </header>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <span class="contact__icon">📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox">israelgm2008@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon">💼</span>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/israel-moreira-81652736a/" target="_blank">linkedin.com/in/israelgm</a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__icon">🐙</span>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/IsraelGM2C1" target="_blank">github.com/israelgm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form">
+                    <div class="form__group">
+                        <input type="text" id="name" required>
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn btn--light">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © <span id="year"></span> Israel Gomes Moreira. Todos os direitos reservados.
+    </footer>
+
+
+</body>
+
+</html>
